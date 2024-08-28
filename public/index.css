@@ -4,3 +4,71 @@ body, html {
   font-family: 'Roboto', sans-serif;
   background-color: #d6f750;
 }
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card {
+    background-color: #f4f4f4;
+    width: 350px;
+    height: 450px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.pic {
+    width: 35%;
+    height: 26%;
+    border-radius: 50%;
+    background-color: black;
+    position: relative;
+    top: -100px;
+}
+
+.icons {
+    img {
+        margin: 0 5px 0 5px;
+    }
+}
+
+small {
+    position: relative;
+    bottom: -20px;
+    text-align: center;
+}
+
+.buttons {
+    position: relative;
+    bottom: -90px;
+
+    button {
+        width: 120px;
+        height: 40px;
+        border-radius: 10px;
+        background-color: #FBD8C2;
+    }
+
+    button:hover {
+        background-color: #f8a470;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #card {
+        width: 300px;
+    }
+
+    .pic {
+        width: 40%;
+        height: 25%;
+        border-radius: 50%;
+    }
+}

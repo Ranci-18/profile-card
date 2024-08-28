@@ -26,12 +26,17 @@ module.exports = {
             {
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader']
+            },
+            {
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                use: ['file-loader']
             }
         ]
     },
     devServer: {
         static: 'dist',
         compress: true,
-        port: 9000
+        port: 9000,
+        hot: true
     }
 }
